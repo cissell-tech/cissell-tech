@@ -1,0 +1,232 @@
+/* ==========================================
+   CISSELL TECHNOLOGIES - DESIGN SYSTEM
+   Palette: Obsidian, Electric Cyan, Steel Slate
+   ========================================== */
+
+:root {
+  --bg-obsidian: #1A1D24;
+  --card-slate: #2C3540;
+  --accent-cyan: #00D2FF;
+  --accent-cyan-hover: #33DCFF;
+  --text-white: #FFFFFF;
+  --text-slate: #A0AEC0;
+  --border-slate: rgba(255, 255, 255, 0.08);
+  --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --container-max: 1200px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-obsidian);
+  color: var(--text-white);
+  font-family: var(--font-family);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* LAYOUT & CONTAINERS */
+.container {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* NAVIGATION */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: rgba(26, 29, 36, 0.9);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-slate);
+  z-index: 1000;
+  padding: 20px 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  color: var(--text-white);
+  text-decoration: none;
+}
+
+.brand-logo span {
+  color: var(--accent-cyan);
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+  align-items: center;
+}
+
+.nav-links a {
+  color: var(--text-slate);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--text-white);
+}
+
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background-color: var(--accent-cyan);
+  color: var(--bg-obsidian);
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-cyan-hover);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-white);
+  border: 1px solid var(--border-slate);
+}
+
+.btn-secondary:hover {
+  border-color: var(--text-slate);
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+/* HERO SECTION */
+.hero {
+  padding: 120px 0 80px 0;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 900px;
+}
+
+.tagline-badge {
+  display: inline-block;
+  color: var(--accent-cyan);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.15;
+  font-weight: 800;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: var(--text-slate);
+  margin-bottom: 32px;
+  max-width: 750px;
+}
+
+.cta-group {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+/* CARDS & GRIDS */
+.section-header {
+  margin-bottom: 48px;
+}
+
+.section-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.section-header p {
+  color: var(--text-slate);
+  font-size: 1.05rem;
+  max-width: 650px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background-color: var(--card-slate);
+  border: 1px solid var(--border-slate);
+  border-radius: 8px;
+  padding: 32px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 210, 255, 0.3);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--text-slate);
+  font-size: 0.95rem;
+}
+
+/* FOOTER */
+footer {
+  border-top: 1px solid var(--border-slate);
+  padding: 40px 0;
+  margin-top: 80px;
+  color: var(--text-slate);
+  font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2.2rem; }
+  .nav-links { display: none; } /* Add mobile drawer script as needed */
+}

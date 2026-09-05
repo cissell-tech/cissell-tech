@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Cissell Technologies</title>
+  <meta name="description" content="Learn about Cissell Technologies, founded by David Cissell to bring senior-level IT management and pragmatic tech leadership to local small businesses.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .about-hero {
+      padding: 100px 0 60px 0;
+      border-bottom: 1px solid var(--border-slate);
+    }
+    .profile-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 48px;
+      align-items: start;
+      margin-top: 40px;
+    }
+    .headshot-container {
+      background-color: var(--card-slate);
+      border: 1px solid var(--border-slate);
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+    .headshot-placeholder {
+      width: 100%;
+      height: 380px;
+      object-fit: cover;
+      border-radius: 6px;
+      background-color: #1A1D24;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-slate);
+      border: 1px dashed var(--border-slate);
+    }
+    .bio-text h2 {
+      font-size: 2rem;
+      margin-bottom: 16px;
+    }
+    .bio-text p {
+      color: var(--text-slate);
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .profile-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">CISSELL <span>TECHNOLOGIES</span></a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="approach.html">Our Approach</a></li>
+        <li><a href="about.html" style="color: var(--text-white);">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Start the Conversation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="about-hero">
+    <div class="container">
+      <span class="tagline-badge">Local Ownership & Senior Leadership</span>
+      <h1>Senior IT Leadership Without the Corporate Overhead</h1>
+      <p style="color: var(--text-slate); font-size: 1.2rem; max-width: 800px; margin-top: 16px;">
+        Cissell Technologies was founded on a straightforward premise: local small businesses deserve direct access to experienced, high-level technology guidance without being forced into high-pressure sales models.
+      </p>
+    </div>
+  </header>
+
+  <!-- FOUNDER & STORY SECTION -->
+  <section>
+    <div class="container">
+      <div class="profile-grid">
+        
+        <!-- HEADSHOT / PHOTO AREA -->
+        <div class="headshot-container">
+          <!-- Replace 'headshot.jpg' with your actual image file when ready -->
+          <img src="headshot.jpg" alt="David Cissell" class="headshot-placeholder" onError="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="headshot-placeholder" style="display:none;">
+            <span>[ Headshot Image Placeholder ]</span>
+          </div>
+          <div style="margin-top: 16px;">
+            <h3 style="font-size: 1.2rem;">David Cissell</h3>
+            <p style="color: var(--text-slate); font-size: 0.9rem;">Founder & Principal Consultant</p>
+          </div>
+        </div>
+
+        <!-- BIO CONTENT -->
+        <div class="bio-text">
+          <h2>Grounded Experience, Local Commitment</h2>
+          <p>
+            Born and raised right here in Marion, AR, I’ve spent over two decades navigating the evolving landscapes of IT management, healthcare technology, and Managed Service Provider (MSP) operations. 
+          </p>
+          <p>
+            Throughout my career managing technical infrastructure, direct engineering teams, and complex client implementations, one challenge consistently stood out: small businesses are frequently underserved. They are often handed generic, one-size-fits-all software packages or shuffled between tiered call centers where no one truly understands their operational context.
+          </p>
+          <p>
+            I founded Cissell Technologies to change that dynamic. We act as a dedicated technology partner—providing the senior expertise, practical security, and ongoing care of an internal IT department, grounded in personal accountability and transparent local relationship building.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CORE VALUES -->
+  <section style="background-color: rgba(255,255,255,0.01);">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Guides Our Work</h2>
+        <p>The principles behind every technical decision and recommendation we make.</p>
+      </div>
+
+      <div class="values-grid">
+        <div class="card">
+          <h3>Pragmatism First</h3>
+          <p>Technology should serve your business operations, not the other way around. We focus on reliable tools that deliver real value without unneeded complexity.</p>
+        </div>
+        <div class="card">
+          <h3>Direct Accountability</h3>
+          <p>When you work with us, you work directly with senior technology leadership. You get straight answers, clear roadmaps, and personal responsibility.</p>
+        </div>
+        <div class="card">
+          <h3>Local Partnership</h3>
+          <p>We are rooted in the Mid-South area. Being local means we care deeply about the success, growth, and resilience of the small businesses in our community.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p><strong>Cissell Technologies</strong> — Marion, AR</p>
+        <p>© 2026 Cissell Technologies. All rights reserved.</p>
+      </div>
+      <div>
+        <p>Direct: 901-485-9563 | david@cissell.tech</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

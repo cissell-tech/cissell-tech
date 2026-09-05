@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Cissell Technologies</title>
+  <meta name="description" content="Start the conversation with Cissell Technologies. Direct access to senior IT leadership for local small businesses.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    .contact-hero {
+      padding: 100px 0 60px 0;
+      border-bottom: 1px solid var(--border-slate);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      margin-top: 40px;
+    }
+    .contact-info-card {
+      background-color: var(--card-slate);
+      border: 1px solid var(--border-slate);
+      border-radius: 8px;
+      padding: 40px;
+    }
+    .info-item {
+      margin-bottom: 28px;
+    }
+    .info-item h3 {
+      font-size: 1.1rem;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .info-item p, .info-item a {
+      color: var(--text-white);
+      font-size: 1.1rem;
+      text-decoration: none;
+    }
+    .info-item a:hover {
+      color: var(--accent-cyan-hover);
+    }
+    /* FORM STYLES */
+    .contact-form {
+      background-color: var(--card-slate);
+      border: 1px solid var(--border-slate);
+      border-radius: 8px;
+      padding: 40px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--text-slate);
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+    .form-group input, 
+    .form-group select, 
+    .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      background-color: var(--bg-obsidian);
+      border: 1px solid var(--border-slate);
+      border-radius: 6px;
+      color: var(--text-white);
+      font-family: var(--font-family);
+      font-size: 1rem;
+      transition: border-color 0.2s ease;
+    }
+    .form-group input:focus, 
+    .form-group select:focus, 
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 768px) {
+      .contact-grid, .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">CISSELL <span>TECHNOLOGIES</span></a>
+      <ul class="nav-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="approach.html">Our Approach</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Start the Conversation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="contact-hero">
+    <div class="container">
+      <span class="tagline-badge">Direct Communication</span>
+      <h1>Start the Conversation</h1>
+      <p style="color: var(--text-slate); font-size: 1.2rem; max-width: 800px; margin-top: 16px;">
+        Whether you have an immediate technical challenge or are evaluating options for long-term managed IT support, reach out directly. No aggressive sales pitches—just practical answers.
+      </p>
+    </div>
+  </header>
+
+  <!-- CONTACT CONTENT -->
+  <section>
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- CONTACT DETAILS -->
+        <div class="contact-info-card">
+          <h2 style="font-size: 1.75rem; margin-bottom: 24px;">Direct Contact</h2>
+          
+          <div class="info-item">
+            <h3>Phone</h3>
+            <p><a href="tel:9014859563">901-485-9563</a></p>
+          </div>
+
+          <div class="info-item">
+            <h3>Email</h3>
+            <p><a href="mailto:david@cissell.tech">david@cissell.tech</a></p>
+          </div>
+
+          <div class="info-item">
+            <h3>Location & Service Area</h3>
+            <p>Based in Marion, AR<br>Serving small businesses across the Mid-South region.</p>
+          </div>
+
+          <div class="info-item" style="margin-bottom: 0;">
+            <h3>Response Expectations</h3>
+            <p style="color: var(--text-slate); font-size: 0.95rem;">
+              Inquiries sent during normal business hours receive direct follow-up within 2 to 4 business hours.
+            </p>
+          </div>
+        </div>
+
+        <!-- FORM -->
+        <div class="contact-form">
+          <h2 style="font-size: 1.75rem; margin-bottom: 24px;">Send a Message</h2>
+          
+          <!-- Replace the action URL with your Formspree endpoint or backend URL -->
+          <form action="https://formspree.io/f/YOUR_FORMSPREE_KEY" method="POST">
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="full-name">Your Name</label>
+                <input type="text" id="full-name" name="name" required placeholder="Jane Doe">
+              </div>
+              <div class="form-group">
+                <label for="company">Company Name</label>
+                <input type="text" id="company" name="company" placeholder="Acme Corp">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="901-555-0123">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="users">Approximate User / Workstation Count</label>
+              <select id="users" name="user_count">
+                <option value="1-5">1 – 5 users</option>
+                <option value="6-20">6 – 20 users</option>
+                <option value="21-50">21 – 50 users</option>
+                <option value="50+">50+ users</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your current IT environment or pain points..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p><strong>Cissell Technologies</strong> — Marion, AR</p>
+        <p>© 2026 Cissell Technologies. All rights reserved.</p>
+      </div>
+      <div>
+        <p>Direct: 901-485-9563 | david@cissell.tech</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

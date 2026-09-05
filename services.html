@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Cissell Technologies</title>
+  <meta name="description" content="Managed IT services, cybersecurity, Microsoft 365 administration, and tech roadmaps tailored for small businesses.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* PAGE-SPECIFIC ENHANCEMENTS */
+    .services-hero {
+      padding: 100px 0 60px 0;
+      border-bottom: 1px solid var(--border-slate);
+    }
+    .service-detail-card {
+      background-color: var(--card-slate);
+      border: 1px solid var(--border-slate);
+      border-radius: 8px;
+      padding: 40px;
+      margin-bottom: 32px;
+      transition: border-color 0.2s ease;
+    }
+    .service-detail-card:hover {
+      border-color: rgba(0, 210, 255, 0.3);
+    }
+    .service-detail-card h3 {
+      font-size: 1.5rem;
+      color: var(--text-white);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .service-detail-card h3::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-cyan);
+      border-radius: 50%;
+    }
+    .service-detail-card p {
+      color: var(--text-slate);
+      font-size: 1.05rem;
+      margin-bottom: 24px;
+    }
+    .deliverables-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border-slate);
+    }
+    .deliverables-list li {
+      color: var(--text-white);
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .deliverables-list li::before {
+      content: '✓';
+      color: var(--accent-cyan);
+      font-weight: bold;
+    }
+    .banner-cta {
+      background: linear-gradient(135deg, var(--card-slate) 0%, rgba(0, 210, 255, 0.05) 100%);
+      border: 1px solid var(--border-slate);
+      border-radius: 8px;
+      padding: 48px;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .banner-cta h2 {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+    .banner-cta p {
+      color: var(--text-slate);
+      max-width: 600px;
+      margin: 0 auto 24px auto;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo">CISSELL <span>TECHNOLOGIES</span></a>
+      <ul class="nav-links">
+        <li><a href="services.html" style="color: var(--text-white);">Services</a></li>
+        <li><a href="approach.html">Our Approach</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="btn btn-primary">Start the Conversation</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header class="services-hero">
+    <div class="container">
+      <span class="tagline-badge">Capabilities & Offerings</span>
+      <h1>Senior-Level Technology Leadership Designed for Small Business</h1>
+      <p style="color: var(--text-slate); font-size: 1.2rem; max-width: 800px; margin-top: 16px;">
+        We don't sell bloated packages or hand you off to a distant call center. We manage, secure, and support your technology with a local, senior partner perspective.
+      </p>
+    </div>
+  </header>
+
+  <!-- SERVICES LISTING -->
+  <section>
+    <div class="container">
+
+      <!-- SERVICE 1 -->
+      <div class="service-detail-card">
+        <h3>Managed IT Services</h3>
+        <p>Day-to-day technology partner providing complete coverage for your computers, servers, and staff. We keep systems running smoothly, resolve technical hiccups quickly, and eliminate operational downtime.</p>
+        <ul class="deliverables-list">
+          <li>Proactive system monitoring & patching</li>
+          <li>Helpdesk & workstation support</li>
+          <li>User account & onboarding management</li>
+          <li>Hardware asset inventory & health tracking</li>
+        </ul>
+      </div>
+
+      <!-- SERVICE 2 -->
+      <div class="service-detail-card">
+        <h3>IT Security & Resilience</h3>
+        <p>Practical, multi-layer security that protects your organization from credentials theft, phishing, ransomware, and unauthorized access without crippling employee productivity.</p>
+        <ul class="deliverables-list">
+          <li>Endpoint protection & threat mitigation</li>
+          <li>Multi-Factor Authentication (MFA) setup</li>
+          <li>Identity security & access controls</li>
+          <li>Vulnerability management & patching</li>
+        </ul>
+      </div>
+
+      <!-- SERVICE 3 -->
+      <div class="service-detail-card">
+        <h3>Microsoft 365 & Cloud Strategy</h3>
+        <p>Modernizing identity, communications, and device management around Microsoft’s cloud ecosystem so your team can work securely from anywhere.</p>
+        <ul class="deliverables-list">
+          <li>Entra ID (Azure AD) identity deployment</li>
+          <li>Exchange Online email management</li>
+          <li>Intune & Windows Autopilot device setup</li>
+          <li>SaaS data backup & protection</li>
+        </ul>
+      </div>
+
+      <!-- SERVICE 4 -->
+      <div class="service-detail-card">
+        <h3>Technology Roadmaps</h3>
+        <p>Clear, practical IT strategic planning. We outline current risks, upcoming equipment replacements, and priority goals on 3, 6, and 12-month timelines so your IT spend is predictable.</p>
+        <ul class="deliverables-list">
+          <li>Quarterly technology reviews</li>
+          <li>Infrastructure lifecycle planning</li>
+          <li>Budget forecasting & risk audits</li>
+          <li>Software vendor coordination</li>
+        </ul>
+      </div>
+
+      <!-- SERVICE 5 -->
+      <div class="service-detail-card">
+        <h3>Backup & Business Continuity</h3>
+        <p>Automated, redundant backup solutions engineered to ensure your company’s data can be restored rapidly in the event of hardware failure, user error, or disaster.</p>
+        <ul class="deliverables-list">
+          <li>Image-based server & workstation backups</li>
+          <li>Cloud & local data redundancy</li>
+          <li>Automated restore testing</li>
+          <li>SaaS backup for M365 (Email, OneDrive, Teams)</li>
+        </ul>
+      </div>
+
+      <!-- SERVICE 6 -->
+      <div class="service-detail-card">
+        <h3>Projects & Modernization</h3>
+        <p>Targeted technical projects to upgrade out-of-date systems, migrate legacy physical servers to modern cloud destinations, or roll out new site network infrastructure.</p>
+        <ul class="deliverables-list">
+          <li>Server retirement & cloud migration</li>
+          <li>Firewall & network hardware rollouts</li>
+          <li>Office expansions & technology moves</li>
+          <li>Wi-Fi & secure remote access deployment</li>
+        </ul>
+      </div>
+
+      <!-- CTA BANNER -->
+      <div class="banner-cta">
+        <h2>Not sure where to start?</h2>
+        <p>You don't need to know exactly what services you need before reaching out. We start by reviewing what you currently have and discussing what you want to accomplish.</p>
+        <a href="contact.html" class="btn btn-primary">Start the Conversation</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-container">
+      <div>
+        <p><strong>Cissell Technologies</strong> — Marion, AR</p>
+        <p>© 2026 Cissell Technologies. All rights reserved.</p>
+      </div>
+      <div>
+        <p>Direct: 901-485-9563 | david@cissell.tech</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
