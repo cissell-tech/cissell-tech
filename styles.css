@@ -57,7 +57,6 @@ section {
   align-items: center;
 }
 
-/* HARD OVERRIDE FOR HYPERLINK DEFAULTS */
 a.brand-link,
 a.brand-link:visited,
 a.brand-link:hover,
@@ -153,7 +152,7 @@ a.brand-link:active {
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  max-width: 900px;
+  max-width: 920px;
 }
 
 .tagline-badge {
@@ -177,7 +176,7 @@ a.brand-link:active {
   font-size: 1.2rem;
   color: var(--text-slate);
   margin-bottom: 32px;
-  max-width: 750px;
+  max-width: 780px;
 }
 
 .cta-group {
@@ -200,7 +199,7 @@ a.brand-link:active {
 .section-header p {
   color: var(--text-slate);
   font-size: 1.05rem;
-  max-width: 650px;
+  max-width: 680px;
 }
 
 .grid-3 {
