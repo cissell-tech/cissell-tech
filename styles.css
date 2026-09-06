@@ -40,7 +40,7 @@ section {
   padding: 80px 0;
 }
 
-/* NAVIGATION */
+/* NAVIGATION & BRANDING */
 .navbar {
   position: sticky;
   top: 0;
@@ -48,7 +48,7 @@ section {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-slate);
   z-index: 1000;
-  padding: 20px 0;
+  padding: 16px 0;
 }
 
 .nav-container {
@@ -57,15 +57,27 @@ section {
   align-items: center;
 }
 
-.brand-logo {
+.brand-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand-logo-img {
+  height: 38px;
+  width: auto;
+  display: block;
+}
+
+.brand-text {
   font-weight: 800;
   font-size: 1.25rem;
   letter-spacing: 1px;
   color: var(--text-white);
-  text-decoration: none;
 }
 
-.brand-logo span {
+.brand-text span {
   color: var(--accent-cyan);
 }
 
@@ -228,5 +240,5 @@ footer {
 /* RESPONSIVE */
 @media (max-width: 768px) {
   .hero h1 { font-size: 2.2rem; }
-  .nav-links { display: none; } /* Add mobile drawer script as needed */
+  .nav-links { display: none; }
 }

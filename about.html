@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About | Cissell Technologies</title>
   <meta name="description" content="Learn about Cissell Technologies, founded by David Cissell to bring senior-level IT management and pragmatic tech leadership to local small businesses.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,7 +69,10 @@
   <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">CISSELL <span>TECHNOLOGIES</span></a>
+      <a href="index.html" class="brand-link">
+        <img src="logo.svg" alt="Cissell Technologies Logo" class="brand-logo-img">
+        <span class="brand-text">CISSELL <span>TECHNOLOGIES</span></span>
+      </a>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="approach.html">Our Approach</a></li>
@@ -96,7 +100,6 @@
         
         <!-- HEADSHOT / PHOTO AREA -->
         <div class="headshot-container">
-          <!-- Replace 'headshot.jpg' with your actual image file when ready -->
           <img src="headshot.jpg" alt="David Cissell" class="headshot-placeholder" onError="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
           <div class="headshot-placeholder" style="display:none;">
             <span>[ Headshot Image Placeholder ]</span>

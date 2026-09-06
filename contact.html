@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact | Cissell Technologies</title>
   <meta name="description" content="Start the conversation with Cissell Technologies. Direct access to senior IT leadership for local small businesses.">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -97,7 +98,10 @@
   <!-- NAVIGATION -->
   <nav class="navbar">
     <div class="container nav-container">
-      <a href="index.html" class="brand-logo">CISSELL <span>TECHNOLOGIES</span></a>
+      <a href="index.html" class="brand-link">
+        <img src="logo.svg" alt="Cissell Technologies Logo" class="brand-logo-img">
+        <span class="brand-text">CISSELL <span>TECHNOLOGIES</span></span>
+      </a>
       <ul class="nav-links">
         <li><a href="services.html">Services</a></li>
         <li><a href="approach.html">Our Approach</a></li>
@@ -154,7 +158,6 @@
         <div class="contact-form">
           <h2 style="font-size: 1.75rem; margin-bottom: 24px;">Send a Message</h2>
           
-          <!-- Replace the action URL with your Formspree endpoint or backend URL -->
           <form action="https://formspree.io/f/YOUR_FORMSPREE_KEY" method="POST">
             
             <div class="form-row">
