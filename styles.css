@@ -65,8 +65,11 @@ section {
 }
 
 .brand-logo-img {
-  height: 38px;
-  width: auto;
+  height: 38px !important;
+  max-height: 38px !important;
+  width: auto !important;
+  max-width: 100% !important;
+  object-fit: contain;
   display: block;
 }
 
@@ -75,6 +78,7 @@ section {
   font-size: 1.25rem;
   letter-spacing: 1px;
   color: var(--text-white);
+  white-space: nowrap;
 }
 
 .brand-text span {
