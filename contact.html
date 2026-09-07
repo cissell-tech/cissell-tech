@@ -160,47 +160,27 @@
         <div class="contact-form">
           <h2 style="font-size: 1.75rem; margin-bottom: 24px;">Send a Message</h2>
           
-          <form action="https://formspree.io/f/YOUR_FORMSPREE_KEY" method="POST">
-            
-            <div class="form-row">
-              <div class="form-group">
-                <label for="full-name">Your Name</label>
-                <input type="text" id="full-name" name="name" required placeholder="Jane Doe">
-              </div>
-              <div class="form-group">
-                <label for="company">Company Name</label>
-                <input type="text" id="company" name="company" placeholder="Acme Corp">
-              </div>
-            </div>
+          <form action="https://formspree.io/f/mrpgyljy" method="POST">
+  <!-- Anti-Spam Honeypot -->
+  <input type="text" name="_gotcha" style="display:none !important;" tabindex="-1" autocomplete="off" />
 
-            <div class="form-row">
-              <div class="form-group">
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="jane@example.com">
-              </div>
-              <div class="form-group">
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="901-555-0123">
-              </div>
-            </div>
+  <div class="form-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required />
+  </div>
 
-            <div class="form-group">
-              <label for="users">Approximate User / Workstation Count</label>
-              <select id="users" name="user_count">
-                <option value="1-5">1 – 5 users</option>
-                <option value="6-20">6 – 20 users</option>
-                <option value="21-50">21 – 50 users</option>
-                <option value="50+">50+ users</option>
-              </select>
-            </div>
+  <div class="form-group">
+    <label for="email">Your Email</label>
+    <input type="email" id="email" name="email" placeholder="john@example.com" required />
+  </div>
 
-            <div class="form-group">
-              <label for="message">How can we help?</label>
-              <textarea id="message" name="message" rows="5" required placeholder="Tell us about your current technology setup or goals..."></textarea>
-            </div>
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="5" placeholder="How can we help your business?" required></textarea>
+  </div>
 
-            <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Message</button>
-          </form>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
         </div>
 
       </div>
